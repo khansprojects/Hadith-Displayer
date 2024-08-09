@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bbc6fa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 4rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.container h2::after {
+    content: '';
+    width: 5rem;
+    height: 0.2rem;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.container blockquote {
+    font-size: 1.7rem;
+}
+
+.container span {
+    float: right;
+    font-style: italic;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.container span::before {
+    content: '';
+    width: 1.5rem;
+    height: 0.1rem;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+}
+
+.container div {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container .randome button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgb(23, 124, 229);
+    color: #ffffff;
+    border: 1px solid rgb(23, 124, 229);
+    border-radius: 25px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.container .custome {
+    margin-top: 0.0rem;
+    visibility: hidden;
+}
+
+.container .custome input,
+.container .custome select {
+    width: 7rem;
+    height: 2.5rem;
+    background: rgb(23, 124, 229);
+    color: #ffffff;
+    border: 1px solid rgb(23, 124, 229);
+    border-radius: 25px;
+    text-align: center;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #bbc6fa;
+    opacity: 1;
+}
+
+.container .randome button:hover,
+.container .custome input:hover,
+.container .custome select:hover {
+    background: transparent;
+    border: 1px solid rgb(23, 124, 229);
+    color: rgb(23, 124, 229);
+}
